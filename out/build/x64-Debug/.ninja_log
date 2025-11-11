@@ -1,0 +1,39 @@
+# ninja log v6
+14	66	7845853090894831	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+66	660	7845853093767863	build.ninja	d1c827f59ccbe77e
+44	92	7845853097428090	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+101	1312	7845853097903909	CMakeFiles/oop1_ex02.dir/src/io.cpp.obj	d2e7c09aadad810b
+42	91	7845853298552254	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+99	5084	7845853299161254	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+44	90	7845855794852096	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+98	5081	7845855795376861	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+40	78	7845856566216391	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+79	98	7845856566535804	clean	7c4ab7700f810e4a
+26	63	7845856567213476	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+69	1008	7845856567649255	CMakeFiles/oop1_ex02.dir/src/io.cpp.obj	d2e7c09aadad810b
+73	5058	7845856567677748	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+57	111	7845857280718919	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+123	10104	7845857281404743	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+43	80	7845857593065983	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+30	66	7845857834287947	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+25	60	7845858166876224	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+61	4999	7845858167287965	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
+5000	5381	7845858216686509	oop1_ex02.exe	18ced2a0fe22e7aa
+56	111	7845859758855491	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+113	5371	7845859759419901	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
+5372	5596	7845859811983903	oop1_ex02.exe	18ced2a0fe22e7aa
+44	75	7845862829004100	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+77	5222	7845862829327960	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
+5223	5436	7845862880728060	oop1_ex02.exe	18ced2a0fe22e7aa
+46	93	7845866426636030	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+95	4974	7845866427136652	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
+4975	5194	7845866475926258	oop1_ex02.exe	18ced2a0fe22e7aa
+48	95	7845868431239285	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+26	63	7845868556691794	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+34	78	7845869637851785	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+80	5181	7845869638316336	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
+5181	5385	7845869689288334	oop1_ex02.exe	18ced2a0fe22e7aa
+57	102	7845877526273741	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+111	5338	7845877526730088	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+104	5552	7845877526730088	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
+5552	5777	7845877581193237	oop1_ex02.exe	18ced2a0fe22e7aa
