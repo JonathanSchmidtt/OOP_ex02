@@ -7,6 +7,7 @@ file(GLOB NEW_GLOB LIST_DIRECTORIES false RELATIVE "C:/Users/yonid_hjudiem/OneDr
 set(OLD_GLOB
   "GameController.h"
   "Location.h"
+  "Player.h"
   "io.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -18,6 +19,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false RELATIVE "C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/src" "C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/src/*.cpp")
 set(OLD_GLOB
   "GameController.cpp"
+  "Player.cpp"
   "io.cpp"
   "main.cpp"
   )

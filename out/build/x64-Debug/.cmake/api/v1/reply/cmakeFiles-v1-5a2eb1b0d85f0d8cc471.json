@@ -7,6 +7,7 @@
 			[
 				"GameController.h",
 				"Location.h",
+				"Player.h",
 				"io.h"
 			],
 			"relative" : "C:/Users/yonid_hjudiem/OneDrive/Desktop/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/\u05e9\u05e0\u05d4 \u05d1/\u05e1\u05de\u05e1\u05d8\u05e8 \u05d0/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/include"
@@ -16,6 +17,7 @@
 			"paths" : 
 			[
 				"GameController.cpp",
+				"Player.cpp",
 				"io.cpp",
 				"main.cpp"
 			],

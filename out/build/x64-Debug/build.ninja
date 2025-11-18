@@ -57,6 +57,14 @@ build CMakeFiles\oop1_ex02.dir\src\GameController.cpp.obj: CXX_COMPILER__oop1_ex
   TARGET_COMPILE_PDB = CMakeFiles\oop1_ex02.dir\
   TARGET_PDB = oop1_ex02.pdb
 
+build CMakeFiles\oop1_ex02.dir\src\Player.cpp.obj: CXX_COMPILER__oop1_ex02_unscanned_Debug C$:\Users\yonid_hjudiem\OneDrive\Desktop\לימודים\שנה$ ב\סמסטר$ א\OOP1\ex02\oop1_ex02_basefiles\oop1_ex02\src\Player.cpp || cmake_object_order_depends_target_oop1_ex02
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi /W4 /permissive- /Zc:externConstexpr /Zc:inline /analyze /w14242 /w14263 /w14265 /w14287 /w14296 /w14545 /w14546 /w14547 /w14549 /w14555 /w14826 /w14905 /w14906 /w14928 /we4996 -fsanitize=address
+  INCLUDES = -I"C:\Users\yonid_hjudiem\OneDrive\Desktop\לימודים\שנה ב\סמסטר א\OOP1\ex02\oop1_ex02_basefiles\oop1_ex02\include"
+  OBJECT_DIR = CMakeFiles\oop1_ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles\oop1_ex02.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\oop1_ex02.dir\
+  TARGET_PDB = oop1_ex02.pdb
+
 build CMakeFiles\oop1_ex02.dir\src\io.cpp.obj: CXX_COMPILER__oop1_ex02_unscanned_Debug C$:\Users\yonid_hjudiem\OneDrive\Desktop\לימודים\שנה$ ב\סמסטר$ א\OOP1\ex02\oop1_ex02_basefiles\oop1_ex02\src\io.cpp || cmake_object_order_depends_target_oop1_ex02
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi /W4 /permissive- /Zc:externConstexpr /Zc:inline /analyze /w14242 /w14263 /w14265 /w14287 /w14296 /w14545 /w14546 /w14547 /w14549 /w14555 /w14826 /w14905 /w14906 /w14928 /we4996 -fsanitize=address
   INCLUDES = -I"C:\Users\yonid_hjudiem\OneDrive\Desktop\לימודים\שנה ב\סמסטר א\OOP1\ex02\oop1_ex02_basefiles\oop1_ex02\include"
@@ -81,7 +89,7 @@ build CMakeFiles\oop1_ex02.dir\src\main.cpp.obj: CXX_COMPILER__oop1_ex02_unscann
 #############################################
 # Link the executable oop1_ex02.exe
 
-build oop1_ex02.exe: CXX_EXECUTABLE_LINKER__oop1_ex02_Debug CMakeFiles\oop1_ex02.dir\src\GameController.cpp.obj CMakeFiles\oop1_ex02.dir\src\io.cpp.obj CMakeFiles\oop1_ex02.dir\src\main.cpp.obj
+build oop1_ex02.exe: CXX_EXECUTABLE_LINKER__oop1_ex02_Debug CMakeFiles\oop1_ex02.dir\src\GameController.cpp.obj CMakeFiles\oop1_ex02.dir\src\Player.cpp.obj CMakeFiles\oop1_ex02.dir\src\io.cpp.obj CMakeFiles\oop1_ex02.dir\src\main.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
