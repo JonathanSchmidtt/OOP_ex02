@@ -5,6 +5,7 @@ cmake_policy(SET CMP0009 NEW)
 # MY_HEADER_FILES at include/CMakeLists.txt:2 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES false RELATIVE "C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/include" "C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/include/*.h")
 set(OLD_GLOB
+  "Enemy.h"
   "GameController.h"
   "Location.h"
   "Player.h"
@@ -18,6 +19,7 @@ endif()
 # MY_SOURCE_FILES at src/CMakeLists.txt:1 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false RELATIVE "C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/src" "C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/src/*.cpp")
 set(OLD_GLOB
+  "Enemy.cpp"
   "GameController.cpp"
   "Player.cpp"
   "io.cpp"

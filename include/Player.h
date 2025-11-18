@@ -13,7 +13,6 @@ public:
 	void setPLocation(int x, int y);
 	int getX() const;
 	int getY() const;
-	int getLives() const;
 	void move(std::string s, std::vector<std::string>& m_board);
 	bool CheckMoveUp(std::vector<std::string>& m_board);
 	bool CheckMoveDown(std::vector<std::string>& m_board);
@@ -22,6 +21,5 @@ public:
 private:
 	int m_colPlayer; //x
 	int m_rowPlayer; //y
-	int m_lives;
 
 };

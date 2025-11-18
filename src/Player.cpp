@@ -3,7 +3,7 @@
 
 
 Player::Player() 
-	:m_colPlayer{ 0 }, m_rowPlayer{ 0 }, m_lives{ 3 }
+	:m_colPlayer{ 0 }, m_rowPlayer{ 0 }
 {
 }
 
@@ -21,9 +21,7 @@ int Player::getY() const {
 	return m_rowPlayer;
 }
 
-int Player::getLives() const {
-	return m_lives;
-}
+
 
 
 

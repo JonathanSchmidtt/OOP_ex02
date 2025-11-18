@@ -17,9 +17,14 @@ using std::vector;
 
 
 GameController::GameController()
-	:m_row_num{ 0 }, m_col_num{ 0 }, m_hasWon{false} ,m_coins{0}
+	:m_row_num{ 0 }, m_col_num{ 0 }, m_hasWon{false} ,m_score{0}, m_coinsCounter{0}, m_lives{3}, m_stage{0}
 {
-	readBoard();
+	m_levelFile.open("Board.txt"); // open file
+	if (!m_levelFile.is_open()) { //cant open
+		cerr << "Cannot open Board.txt file\n";
+		exit(EXIT_FAILURE);
+	}
+	readBoard(); 
 }
 
 
@@ -27,40 +32,41 @@ GameController::GameController()
 void GameController::readBoard(){
 	//starting a stage won=false
 	m_hasWon = false;
-	//open file
-	auto levelList = std::ifstream("Board.txt");
-	if (!levelList.is_open())
-	{
-		cerr << "Cannot open Board.txt file\n";
-		exit(EXIT_FAILURE);
-	}
-
 	//earse the board
 	m_board.clear();
+	m_coinsCounter = 0; 
+	m_stage++;
+	//check if the file ended
+	if (m_levelFile.peek() == EOF) {
+		cout << "Game finished.\n";
+		exit(0); 
+	}
+
 
 	//reading first number: cols
 	string temp_row_num;
-	if (!(std::getline(levelList, temp_row_num)))
+	if (!(std::getline(m_levelFile, temp_row_num)))
 	{
-		cerr << "Failed to read line length from Board.txt\n";
-		exit(EXIT_FAILURE);
+		return;
 	}
+
 	m_row_num = std::stoi(temp_row_num);
 
 	
 	string temp_row;
 	//read as long as row_num
 	for (int i = 0; i < m_row_num; ++i) {
-		if (!(std::getline(levelList, temp_row))) {
-			std::cerr << "coudnt read line: " << i << endl;
+		if (!(std::getline(m_levelFile, temp_row))) {
+			cerr << "coudnt read line: " << i << endl;
 			exit(EXIT_FAILURE);
 		}
-		//print
-		cout << temp_row << endl;
+		//save in the 2d vector array
 		m_board.push_back(temp_row);
 	}
+	m_levelFile.ignore(); // skip line between a stage to stage
+
 	if (!m_board.empty()) {
-		searchObjects();
+		searchObjects(); //check for objects in the game
 	}
 }
 
@@ -73,6 +79,14 @@ void GameController::searchObjects() {
 			if (box == '@') {
 				p.setPLocation(j, i);
 				m_board[i][j] = ' '; //to delete the Player draw from board
+			}
+			else if(box== '*'){
+				m_coinsCounter++;
+			}
+			else if (box == '%') {
+				//m_nemesis.push_back();
+
+
 			}
 			//check for enemy
 		}
@@ -104,7 +118,7 @@ void GameController::handleInput() {
 	}
 	else {
 		if (ch == 32) {
-			std::cout << "SPACE pressed\n";
+			cout << "SPACE pressed\n";
 			p.move("space", m_board);
 		}
 	}
@@ -116,13 +130,13 @@ void GameController::printGame() {
 	Screen::resetLocation(); //cursor from start
 	//delete 
 	for (int i = 0; i < m_board.size(); ++i) {
-		std::cout << m_board[i] << std::endl;
+		cout << m_board[i] << endl;
 	}
-	cout << "coins : " << m_coins << "        lives : " << p.getLives() <<
-		"        stage : " << endl;
+	cout << "score : " << m_score << "        lives : " << m_lives <<
+		"        stage : " <<  m_stage << endl;
 	//draw player
 	Screen::setLocation(Location(p.getY(), p.getX()));
-	std::cout << '@';
+	cout << '@';
 }
 
 
@@ -134,8 +148,11 @@ void GameController::run() {
 		HandleCollision();
 		printGame();
 
-		if (p.getLives() == 0) {
-			m_hasWon = false;
+		if (m_hasWon) {
+			system("cls");
+			readBoard();
+
+			printGame();
 		}
 	}
 }
@@ -150,6 +167,18 @@ void GameController::HandleCollision() {
 	if (tile == '*') {
 
 		m_board[y][x] = ' ';
-		m_coins += 1;
+		m_coinsCounter--;
+		m_score += 10;
+		if (m_coinsCounter == 0) {
+			m_hasWon = true;
+		}
+	}
+	else if (tile == '%') {
+		//m_lives--;
+		if (m_lives <= 0) {
+			system("cls");
+			cout << "YOU LOST.\n";
+			exit(0);
+		}
 	}
 }

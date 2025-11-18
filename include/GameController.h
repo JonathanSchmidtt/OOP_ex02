@@ -1,5 +1,7 @@
 #pragma once
 #include "Player.h"
+#include "Enemy.h"
+#include <cstdlib>
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -17,8 +19,10 @@ class GameController {
 		void run();
 		void HandleCollision();
 	private:
-		int m_row_num, m_col_num, m_coins;
+		int m_row_num, m_col_num, m_score, m_coinsCounter, m_lives, m_stage;
 		bool m_hasWon;
+		std::ifstream m_levelFile;
 		std::vector<std::string> m_board;
 		Player p;
+		std::vector<Enemy> m_nemesis;
 };
