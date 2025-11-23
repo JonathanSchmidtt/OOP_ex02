@@ -32,9 +32,11 @@ GameController::GameController()
 void GameController::readBoard(){
 	//starting a stage won=false
 	m_hasWon = false;
-	//earse the board
+	//earse the board and members
 	m_board.clear();
 	m_coinsCounter = 0; 
+	m_enemies.clear();
+
 	m_stage++;
 	//check if the file ended
 	if (m_levelFile.peek() == EOF) {
@@ -77,21 +79,20 @@ void GameController::searchObjects() {
 			char box = m_board[i][j];
 			//checking where the player is
 			if (box == '@') {
-				p.setPLocation(j, i);
+			//	p.setPLocation(j, i);
 				m_board[i][j] = ' '; //to delete the Player draw from board
+				p.setStartingPLocation(j, i);
 			}
 			else if(box== '*'){
 				m_coinsCounter++;
 			}
-			else if (box == '%') {
-				//m_nemesis.push_back();
+			else if (box == '%') {//check for enemy
+				m_enemies.push_back(Enemy(j, i));
 
-
+				m_board[i][j] = ' '; //delete the enemy place
 			}
-			//check for enemy
 		}
 	}
-	
 }
 
 
@@ -118,7 +119,6 @@ void GameController::handleInput() {
 	}
 	else {
 		if (ch == 32) {
-			cout << "SPACE pressed\n";
 			p.move("space", m_board);
 		}
 	}
@@ -134,6 +134,11 @@ void GameController::printGame() {
 	}
 	cout << "score : " << m_score << "        lives : " << m_lives <<
 		"        stage : " <<  m_stage << endl;
+	//draw enemy
+	for (int j = 0; j < m_enemies.size(); j++) {
+		Screen::setLocation(Location(m_enemies[j].getY(), m_enemies[j].getX()));
+		cout << '%';
+	}
 	//draw player
 	Screen::setLocation(Location(p.getY(), p.getX()));
 	cout << '@';
@@ -145,6 +150,13 @@ void GameController::run() {
 
 	while (true) {
 		handleInput();
+
+		HandleCollision();
+		printGame();
+
+		for (int i = 0; i < m_enemies.size(); ++i) {
+			m_enemies[i].move(m_board, p.getX(), p.getY());
+		}
 		HandleCollision();
 		printGame();
 
@@ -167,18 +179,23 @@ void GameController::HandleCollision() {
 	if (tile == '*') {
 
 		m_board[y][x] = ' ';
-		m_coinsCounter--;
-		m_score += 10;
+		m_coinsCounter--; 
+		
+		m_score += (m_stage * 2);
 		if (m_coinsCounter == 0) {
 			m_hasWon = true;
+			m_score += (m_stage * 50);
 		}
 	}
-	else if (tile == '%') {
-		//m_lives--;
-		if (m_lives <= 0) {
-			system("cls");
-			cout << "YOU LOST.\n";
-			exit(0);
+	for (int i = 0; i < m_enemies.size(); ++i) {
+		if (x == m_enemies[i].getX() && y == m_enemies[i].getY()) {
+			m_lives--;
+		 	p.resetToStart();
+			if (m_lives <= 0) {
+				system("cls");
+				cout << "YOU LOST.\n";
+				exit(0);
+			}
 		}
 	}
-}
+}	

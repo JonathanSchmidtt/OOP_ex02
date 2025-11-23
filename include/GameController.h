@@ -24,5 +24,5 @@ class GameController {
 		std::ifstream m_levelFile;
 		std::vector<std::string> m_board;
 		Player p;
-		std::vector<Enemy> m_nemesis;
+		std::vector<Enemy> m_enemies;
 };

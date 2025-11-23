@@ -1,22 +1,10 @@
 # ninja log v6
-33	72	7851808960434751	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
-90	461	7851811583795319	build.ninja	d1c827f59ccbe77e
-66	5228	7851768509933361	CMakeFiles/oop1_ex02.dir/src/Player.cpp.obj	a8e0d7907193e34d
-91	5154	7851805241744184	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
-94	5494	7851801276881332	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+26	59	7855937557460986	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
+101	5591	7855920565145159	CMakeFiles/oop1_ex02.dir/src/Player.cpp.obj	a8e0d7907193e34d
+90	461	7855938569063493	build.ninja	d1c827f59ccbe77e
 69	1008	7845856567649255	CMakeFiles/oop1_ex02.dir/src/io.cpp.obj	d2e7c09aadad810b
+97	6469	7855918740545643	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
+58	5209	7855933301858297	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
 79	98	7845856566535804	clean	7c4ab7700f810e4a
-5155	5392	7851805292366492	oop1_ex02.exe	b60373e0f1235d5
-81	486	7851782959099076	CMakeFiles/oop1_ex02.dir/src/Enemy.cpp.obj	8a1dc3e732e0256c
-33	79	7851814368931392	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
-90	6389	7851814369534809	CMakeFiles/oop1_ex02.dir/src/Player.cpp.obj	a8e0d7907193e34d
-98	6393	7851814369631836	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
-85	6531	7851814369489294	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
-6532	6785	7851814433953279	oop1_ex02.exe	b60373e0f1235d5
-49	88	7851815279807277	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
-97	5308	7851815280247179	CMakeFiles/oop1_ex02.dir/src/main.cpp.obj	dbe720ed10b93568
-91	5485	7851815280226258	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
-5485	5696	7851815334155955	oop1_ex02.exe	b60373e0f1235d5
-47	77	7851815612609054	C:/Users/yonid_hjudiem/OneDrive/Desktop/לימודים/שנה ב/סמסטר א/OOP1/ex02/oop1_ex02_basefiles/oop1_ex02/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	2ffee95ac774dfb3
-79	5126	7851815612926176	CMakeFiles/oop1_ex02.dir/src/GameController.cpp.obj	3bf594d2930a8b82
-5127	5352	7851815663406435	oop1_ex02.exe	b60373e0f1235d5
+5209	5420	7855933353371185	oop1_ex02.exe	b60373e0f1235d5
+70	1771	7855929350458543	CMakeFiles/oop1_ex02.dir/src/Enemy.cpp.obj	8a1dc3e732e0256c

@@ -3,7 +3,7 @@
 
 
 Player::Player() 
-	:m_colPlayer{ 0 }, m_rowPlayer{ 0 }
+	:m_colPlayer{ 0 }, m_rowPlayer{ 0 }, m_startCol{ 0 }, m_startRow{ 0 }
 {
 }
 
@@ -21,9 +21,18 @@ int Player::getY() const {
 	return m_rowPlayer;
 }
 
+void Player::setStartingPLocation(int x, int y) {
+	m_startCol = x;
+	m_startRow = y;
 
+	m_colPlayer = x;
+	m_rowPlayer = y;
+}
 
-
+void Player::resetToStart() {
+	m_colPlayer = m_startCol;
+	m_rowPlayer = m_startRow;
+}
 
 
 
