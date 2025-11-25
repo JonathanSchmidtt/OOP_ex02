@@ -40,7 +40,7 @@ void GameController::readBoard(){
 	m_stage++;
 	//check if the file ended
 	if (m_levelFile.peek() == EOF) {
-		cout << "Game finished.\n";
+		cout << "YOU WON!.\n";
 		exit(0); 
 	}
 
